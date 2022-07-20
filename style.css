@@ -1,0 +1,60 @@
+/* General Part */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Banner Part Style Start  */
+.first-part {
+    margin: 0 auto;
+
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    background-color: #161616;
+    border-radius: 5%;
+    align-items: center;
+}
+
+.banner {
+    width: 50%;
+    color: white;
+    margin: 100px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.btn {
+    background-color: #DD0000;
+    color: white;
+    padding: 15px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.Image-Part {
+    margin: none;
+}
+
+/* Banner Part Style End */
