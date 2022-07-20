@@ -175,6 +175,10 @@ aside {
     justify-content: space-between;
 }
 
+.extra-button {
+    display: none;
+}
+
 /* Second Part Edit End Here  */
 
 /* Footer part edit start here */
@@ -212,3 +216,127 @@ hr {
 }
 
 /* Footer part edit End here */
+
+/* -----------Media Query----------- */
+
+/* For Mobile */
+@media only screen and (max-width:688px) {
+    section {
+        width: 100%;
+    }
+
+    /* First Part */
+    .first-part {
+        flex-direction: column;
+    }
+
+    .banner-text,
+    .banner-image {
+        width: 90%;
+    }
+
+    .banner-heading {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+
+    .banner-details {
+        width: 80%;
+        height: 57px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    /* Second Part */
+    .second-section {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .top-links {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .links {
+        padding: 10px;
+    }
+
+    .links>a {
+        font-size: 1em;
+    }
+
+    .grid-blogs {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .extra-button {
+        display: none;
+    }
+
+    .footer-items {
+        flex-direction: column;
+    }
+}
+
+/* For Tablets */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+
+    .second-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-link {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .link {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 15px 10px;
+
+    }
+
+    .grid-blogs {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .grid-blogs>.blog:last-child {
+        display: none;
+    }
+
+    .extra-button {
+        display: block;
+        margin-top: 25px;
+    }
+
+    .extra-button>.button {
+        padding: 15px 30px;
+        font-size: 1.3em;
+    }
+
+    .footer-items {
+        width: 70%;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
