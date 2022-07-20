@@ -210,9 +210,9 @@ hr {
     margin: 20px;
 }
 
-.footer-icons>p {
-    font-size: 30px;
-    padding: 20px 30px;
+.fa-brands {
+    font-size: 40px;
+    padding: 20px;
 }
 
 /* Footer part edit End here */
