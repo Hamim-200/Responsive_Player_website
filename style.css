@@ -1,9 +1,4 @@
 /* General Part */
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
 body {
     font-family: 'Dancing Script', cursive;
     font-family: 'Gentium Book Plus', serif;
@@ -12,49 +7,208 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Banner Part Style Start  */
-.first-part {
-    margin: 0 auto;
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    display: flex;
+section {
     width: 80%;
-    height: 80vh;
-    background-color: #161616;
-    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+/* First Part Edit Start Here */
+
+.first-part {
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.banner {
-    width: 50%;
     color: white;
-    margin: 100px;
+    border-radius: 30px;
+    background-color: #161616
 }
 
-h1 {
-    font-size: 60px;
+.banner-text,
+.banner-image {
+    width: 45%;
 }
 
-p {
-    font-size: 15px;
+.banner-heading {
+    font-size: 3em;
+    margin: 20px 0;
 }
 
-.btn {
+.button {
+    background-color: #DD0000;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 7px;
+}
+
+.button>a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.button>a>p {
+    margin-left: 5px;
+}
+
+/* button animation  */
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* First Part Edit End Here */
+
+/* Second Part Edit Start Here  */
+.second-section {
+    display: flex;
+}
+
+aside {
+    width: 300px;
+}
+
+.links {
+    background-color: rgb(35, 35, 35);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.link {
+    margin: 10px;
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.link>a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+}
+
+#extra-link {
     background-color: #DD0000;
     color: white;
-    padding: 15px;
-    border-radius: 10%;
-    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: gray;
+#extra-link>a {
+    color: white;
 }
 
-.Image-Part {
-    margin: none;
+.grid-blogs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: 0 auto;
+    margin-left: 30px;
 }
 
-/* Banner Part Style End */
+.blog {
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+}
+
+.blog-thumbnail>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.transfar {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 7px 20px;
+    margin: 15px 15px;
+}
+
+.blog-text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.blog-icons,
+.time,
+.comment {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.time,
+.comment {
+    width: 15%;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
+/* Second Part Edit End Here  */
+
+/* Footer part edit start here */
+footer {
+    background-color: #161616;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+footer>h2 {
+    font-size: 35px;
+    padding: 30px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid grey;
+}
+
+.footer-items,
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-items>p {
+    margin: 20px;
+}
+
+.footer-icons>p {
+    font-size: 30px;
+    padding: 20px 30px;
+}
+
+/* Footer part edit End here */
