@@ -204,6 +204,7 @@ hr {
 .footer-icons {
     display: flex;
     justify-content: center;
+
 }
 
 .footer-items>p {
@@ -213,6 +214,7 @@ hr {
 .fa-brands {
     font-size: 40px;
     padding: 20px;
+    color: white;
 }
 
 /* Footer part edit End here */
